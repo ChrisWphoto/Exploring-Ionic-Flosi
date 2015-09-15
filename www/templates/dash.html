@@ -1,0 +1,29 @@
+<ion-view view-title="{{User.task}} Face-Off" class="dash-page" class="bar-positive" >
+    <ion-content scroll="true">
+
+        <div class="row">
+            <div id="col-your-name" class="col">
+
+
+
+
+                <div ng-repeat="item in User.primaryUserArray">
+                    <img class="achieve-icon" src="img/bunny.gif ">
+                </div>
+                <div class="dash-name">{{User.primaryUser}}</div>
+
+            </div>
+            <div id="col-friend" class="col">
+                <img class="achieve-icon" src="img/piggie.png">
+               <div class="dash-name">{{User.friendUser}}</div>
+            </div>
+
+        </div>
+        <button class="button button-block button-balanced" ng-click="completeTask()">
+            Did you {{User.task}} today?
+        </button>
+        <h1>Inzone</h1>
+
+
+    </ion-content>
+</ion-view>

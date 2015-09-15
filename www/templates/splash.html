@@ -1,0 +1,40 @@
+<ion-view view-title="Welcome to Flossy" hide-nav-bar="true" class="splash-page">
+    <ion-content>
+        <div class="logo">
+        <h1>Flosi</h1>
+        </div>
+        <div class="login-form">
+            <div class="card">
+                <div class="list">
+                    <label class="item item-input">
+                        <input type="text" ng-model="form.name" placeholder="Enter your name">
+                    </label>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="list">
+                    <label class="item item-input">
+                        <input type="text" ng-model="form.friend" placeholder="Who will help you?">
+                    </label>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="list">
+                    <label class="item item-input">
+                        <input type="text" placeholder="What do you want to do?" ng-model="task">
+                    </label>
+                </div>
+            </div>
+
+            <div class="padding">
+                <button class="button button-block button-positive"
+                        ng-click="submitForm(form.name, form.friend, task)">
+                    {{ task }}
+                </button>
+            </div>
+
+        </div>
+    </ion-content>
+</ion-view>
